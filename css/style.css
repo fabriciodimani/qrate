@@ -1,0 +1,220 @@
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth; /*Efecto scroll*/
+}
+body {
+    font-size: 1.5rem;
+}
+
+/*Header */
+.navbar {
+    background-color: #212529;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-light .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.219);
+}
+
+.button-1 {
+    background-color: #4cc9f0 !important;
+}
+
+.button-2 {
+    background-color: #4895ef !important;
+}
+
+/*Main*/
+#main .carousel-inner img {
+    max-height: 70vh;
+    height: 2%;
+    object-fit: cover;
+    filter: grayscale(80%);
+}
+
+#carousel {
+    position: relative;
+}
+
+#carousel .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    z-index: 1;
+}
+
+#carousel .overlay .container,
+#carousel .overlay .row {
+    height: 100%;
+}
+
+#carousel .overlay button,
+#carousel .overlay a {
+    font-size: 1.5rem;
+}
+
+.titulo-mobile {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .titulo-mobile {
+        display: inline-block;
+    }
+}
+
+@media (max-width: 767px) {
+    .titulo-principal {
+        display: none;
+    }
+}
+
+/*Benefios*/
+.section-title {
+    font-size: 3rem;
+}
+
+#Servicios .card,
+#Servicios .card h5 {
+    font-size: 1.5rem;
+}
+
+.card-title {
+    font-size: medium;
+}
+
+/*Lugar y Fecha*/
+#oficinas .container-fluid {
+    background-color: black;
+    color: white;
+}
+
+#oficinas a {
+    font-size: 1.5rem;
+}
+
+/*Redes Sociales*/
+.sticky-container {
+    padding: 0px;
+    margin: 0px;
+    position: fixed;
+    right: -130px;
+    top: 230px;
+    width: 210px;
+    z-index: 1100;
+}
+
+.sticky li {
+    list-style-type: none;
+    background-color: #212529;
+    color: #ffffff !important;
+    height: 43px;
+    padding: 0px;
+    margin: 0px 0px 1px 0px;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.sticky li:hover {
+    margin-left: -210px;
+}
+
+.sticky li img {
+    float: left;
+    margin: 5px 4px;
+    margin-right: 5px;
+}
+
+.sticky li p {
+    padding-top: 5px;
+    margin: 0px;
+    line-height: 16px;
+    font-size: 11px;
+    width: 500px;
+}
+
+.sticky li p a {
+    text-decoration: underline;
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.sticky li p a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 990px) {
+    .redes-sociales {
+        display: contents;
+    }
+}
+
+/*Footer*/
+#footer {
+    background-color: #212529 !important;
+    color: white;
+    min-height: 5rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+#text-associated-companies {
+    font-size: 3rem;
+}
+
+#associated-companies {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 990px) {
+    #associated-companies {
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* Error 404 */
+
+/* Galeria de imagnes */
+.contenedor-imagenes {
+    display: flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 3px;
+}
+
+.contenedor-imagenes .imagen {
+    width: 33%;
+    position: relative;
+    height: 300px;
+    margin-bottom: 5px;
+    box-shadow: 0px 0px 3px 0px;
+}
+
+.imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*Modal*/
+.modal-dialog h5,
+.modal-dialog button,
+.modal-dialog input,
+.modal-dialog span {
+    font-size: 1.5rem;
+}
